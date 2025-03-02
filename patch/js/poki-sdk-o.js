@@ -107,7 +107,7 @@
   }
   ));
   var o, i = ((o = window.pokiSDKVersion) || (o = e("ab") || "v2.260.1"),
-  "patch/js/poki-sdk-" + (n ? "kids" : "core") + "-" + o + ".js"), r = document.createElement("script");
+  "https://cdn.jsdelivr.net/gh/genizy/gh/patch/js/poki-sdk-" + (n ? "kids" : "core") + "-" + o + ".js"), r = document.createElement("script");
   r.setAttribute("src", i),
   r.setAttribute("type", "text/javascript"),
   r.setAttribute("crossOrigin", "anonymous"),
