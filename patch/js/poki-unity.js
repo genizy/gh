@@ -1171,15 +1171,11 @@
     window.initPokiBridge = function(n) {
         window.pokiReady || window.pokiAdBlock ? window.pokiReady ? window.unityGame.SendMessage(n, "ready") : window.pokiAdBlock && window.unityGame.SendMessage(n, "adblock") : window.pokiBridge = n,
         window.commercialBreak = function() {
-            PokiSDK.commercialBreak().then(function() {
-                window.unityGame.SendMessage(n, "commercialBreakCompleted")
-            })
+            window.unityGame.SendMessage(n, "commercialBreakCompleted")
         }
         ,
         window.rewardedBreak = function() {
-            PokiSDK.rewardedBreak().then(function(e) {
-                window.unityGame.SendMessage(n, "rewardedBreakCompleted", e.toString())
-            })
+            window.unityGame.SendMessage(n, "rewardedBreakCompleted", e.toString())
         }
     }
 }
